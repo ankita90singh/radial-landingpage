@@ -1,0 +1,769 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: playfair-display;
+  }
+  body,
+  html {
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  #main {
+    width: 100%;
+  
+    background-color: aliceblue;
+  }
+  #nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 3px 5px;
+    font-family: oswald;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 35px;
+  }
+  #txt1 h1 {
+    font-weight: 600;
+    font-family: playfair-display;
+    /* margin-top: 35px; */
+    text-align: center;
+    line-height: 0.8;
+    font-size: 7vw;
+    /* padding: 20px 30px; */
+    letter-spacing: -3;
+  }
+  #txt1 p {
+    font-weight: 600;
+    font-family: playfair-display;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 0.8;
+    font-size: 15px;
+    /* padding: 20px 30px; */
+    letter-spacing: -4;
+  }
+  #form {
+    font-family: playfair-display;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 180px;
+  }
+  #form input {
+    padding: 5px 10px;
+    background-color: rgba(149, 147, 147, 0.256);
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    color: rgba(95, 96, 97, 0.292);
+    font-weight: 600;
+    opacity: 0.7;
+  }
+  #form input::placeholder {
+    color: rgba(127, 127, 127, 0.803);
+    font-size: 13px;
+    font-weight: 500;
+  }
+  #form button {
+    color: rgb(220, 218, 218);
+    padding: 4px 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 15px;
+    background: linear-gradient(to bottom,rgba(93, 129, 230, 0.473),rgb(61, 89, 173));
+  }
+  #cmain{
+    width: 100%;
+    position: relative;
+    display: flex;
+    
+  }
+  #ohone{
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    z-index: 33;
+    top: -7vw;
+    left: 39.25vw;
+  }
+  #ohone img{
+    width: 310px;
+  
+   
+  }
+  #box::-webkit-scrollbar{
+    display: none;
+  }
+  #box{
+    width: 300px;
+    height: 300px;
+    /* background-color: #3c1919; */
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 1vw;
+    margin-top: 1vw;
+    border-radius: 50%;
+   
+  }
+  #box1::-webkit-scrollbar{
+    display: none;
+  }
+  #box1{
+    width: 300px;
+    height: 590px;
+    /* background-color: #c90000; */
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: -6vw;
+    border-radius: 10%;
+   flex-shrink: 0;
+  }
+  #im1{
+    flex-shrink: 0;
+    display: inline-block;
+    width: 300px;
+    height: 600px;
+    /* background-color: forestgreen; */
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFaiurYby7xu8coAYkfnTo2pZ9jk651AAtLxY7We0wn-lFFCGrZ3otCiHU5We-W0nfYZM&usqp=CAU);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    animation-name: anime;
+    animation-duration: 12s;
+    animation-delay: 2s; 
+    animation-iteration-count: infinite;
+    margin-left: -4px;
+    animation-direction: reverse;
+  }
+  
+  #im2{
+    flex-shrink: 0;
+    display: inline-block;
+    width: 300px;
+    height: 600px;
+    /* background-color: red; */
+    background-image: url(https://cdn.create.vista.com/downloads/7a3400c4-d337-49f4-a132-9687817ce95f_640.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    animation-name: anime;
+    animation-duration: 12s;
+    animation-delay: 2s; 
+    animation-iteration-count: infinite;
+    margin-left: -4px;
+    animation-direction: reverse;
+  }
+  #im3{
+    flex-shrink: 0;
+    display: inline-block;
+    width: 300px;
+    height: 600px;
+    /* background-color: goldenrod; */
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/i/65bf5056-5fd0-46d0-9b1a-d6f9fab300d6/decrfbk-10547f24-4a5e-4db5-9d32-ef9d898c31bc.png/v1/fit/w_375,h_667/template_spotify_music_19_by_ammonis_by_ammonis_decrfbk-375w.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: anime;
+    animation-duration: 12s;
+    animation-delay: 2s; 
+    animation-iteration-count: infinite;
+    margin-left: -4px;
+    animation-direction: reverse;
+  }
+  #im4{
+    flex-shrink: 0;
+    display: inline-block;
+    width: 300px;
+    height: 600px;
+    /* background-color: aquamarine; */
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3cZ6TX5P7_WnRzg22sjxboz_fpz-qhZcH3nLOEWm3xchNAG_Mpcld9hcyxQUIBV2zn5A&usqp=CAU);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: anime;
+    animation-duration: 12s;
+    animation-delay: 2s; 
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    margin-left: -4px;
+    
+    
+  }
+  #im5{
+    flex-shrink: 0;
+    display: inline-block;
+    width: 300px;
+    height: 600px;
+    /* background-color: rgb(225, 255, 0); */
+    background-image: url(https://cdn.psdrepo.com/images/2x/daily-ui-player-psd-a9.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: anime;
+    animation-duration: 12s;
+    animation-delay: 2s; 
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    margin-left: -4px;
+    
+    
+  }
+  #im6{
+    
+    flex-shrink: 0;
+    display: inline-block;
+    width: 300px;
+    height: 600px;
+    background-color: rgba(255, 0, 144, 0.712); 
+    background-image: url(https://marketplace.canva.com/EAFLqsjDsAk/1/0/900w/canva-blue-pink-modern-dark-music-player-instagram-story-7SZOD4iPKtQ.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: anime;
+    animation-duration: 12s;
+    animation-delay: 2s; 
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    margin-left: -4px;
+    
+    
+  } 
+  @keyframes anime {
+    0%{
+        transform: translateX(-300);
+    }
+    20%{
+        transform: translateX(-400%);
+    }
+    40%{
+        transform: translateX(-300%);
+    }
+    60%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+  
+  }
+  /* #circles {
+   
+    overflow-x: auto;
+    margin-top: 100px;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  #circles::-webkit-scrollbar {
+    display: none;
+  }
+  #mobile{
+    z-index: 99;
+    width: 310px;
+    height: 500px;
+    position: absolute;
+    z-index: 33;
+    top: 22vw;
+    left: 39.8vw;
+   
+  }
+  #mobile img{
+    width: 310px;
+   
+  
+  }
+  #screen{
+    width: 300px;
+    height: 300px;
+    /* background-color: #3c1919; */
+    /* overflow-x: auto;
+    white-space: nowrap;
+    /* margin: 1vw; */
+    /* margin-top: 18;
+    border-radius: 50%;
+  
+  
+  } */ 
+  /* #screen1{
+    width: 300px;
+    height: 590px;
+  /* background-color: #c90000; */
+  /* overflow-x: auto;
+  white-space: nowrap;
+  
+  border-radius: 10%;
+  } */
+  /* #screen::-webkit-scrollbar{
+    display: none;
+  }
+  #screen1::-webkit-scrollbar{
+    display: none;
+  }
+  #circle #im1{
+    display: inline-block;
+    width: 300px;
+    height: 570px;  */
+  
+    /* background-color: forestgreen; */
+    /* background-image: url(https://marketplace.canva.com/EAFLqsjDsAk/1/0/900w/canva-blue-pink-modern-dark-music-player-instagram-story-7SZOD4iPKtQ.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    animation-name: an;
+    animation-duration: 12s;
+    animation-delay: 2s; 
+    animation-iteration-count: infinite;
+    margin-left: -4px;
+    animation-direction: alternate;
+  } 
+  
+  
+    
+  
+  
+  #circle {
+    width: 19.5vw;
+    height: 19.5vw;
+    background-color: rgba(128, 128, 128, 0.293);
+    border-radius: 100vw;
+    flex-shrink: 0;
+  } */
+  #txt2 {
+    text-align: center;
+    padding: 60px 0;
+    margin-top: 80px;
+  }
+  #txt2 h1 {
+    font-size: 3.5vw;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+  #txt2 .hcol {
+    color: dodgerblue;
+  }
+  #section {
+    padding: 70px 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #section #right{
+   padding-left: 200px;
+   animation-name: rightaligntxt;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+  
+  }
+  @keyframes rightaligntxt {
+    from{
+      transform:  translate(-100%);
+      opacity: 0;
+      
+    }
+    to{
+      transform:  translate(0%);
+      opacity: 1;
+    }
+    
+  }
+  
+  #right h1 {
+    width: 40%;
+    font-size: 3vw;
+    line-height: 1;
+  
+    font-weight: 600;
+  }
+  #right p {
+    width: 40%;
+    margin-top: 5px;
+    font-weight: 700;
+  }
+  #left {
+    width: 40%;
+    height: 400px;
+   
+  }
+  #left img{
+    width: 90px;
+  
+    
+    flex-shrink: 0;
+  
+  }
+  @keyframes leftimg {
+    from{
+      transform:  rotateY(0);
+      
+    }
+    to{
+      transform:  rotateZ(360deg);
+    }
+    
+  }
+  #left #img1{
+    z-index: 99;
+    width: 10vw;
+    height: 10vw;
+    margin-top: 140px;
+    margin-left: 190px;
+    /* position: absolute;
+    padding: 4px 4px;
+    top: 210vh;
+    left: 17%;
+    transform: translate(-50%,-50%); */
+    border: 6px solid #1E90FF;
+    padding: 4px 4px;
+    border-radius: 300px;
+    animation-name: leftimg;
+    animation-duration: 1s;
+    animation-delay: 1s;
+  
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+  
+  }
+  #left #img2{
+    position: absolute;
+    z-index: 99;
+    width: 8.4vw;
+    height: 17vh;
+    margin-top: 10px;
+    margin-left: -90px;
+   
+    
+    border-radius: 900px;
+    animation-name: leftimg;
+    animation-duration: 1s;
+    animation-delay: 1s;
+  
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+  
+  }
+  #left #img3{
+    z-index: 99;
+    width: 7vw;
+    height: 15vh;
+    margin-top: 20px;
+    margin-left: 160px;
+   
+   
+    border-radius: 900px;
+    animation-name: leftimg;
+    animation-duration: 1s;
+    animation-delay: 1s;
+   
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+  
+  }
+  #left #img4{
+    position: absolute;
+    z-index: 99;
+    width: 8.4vw;
+    height: 17vh;
+    margin-top: -170px;
+    margin-left: 90px;
+   
+    
+    border-radius: 900px;
+    animation-name: leftimg;
+    animation-duration: 1s;
+    animation-delay: 1s;
+  
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+  
+  }
+  #left #img5{
+    z-index: 99;
+    width: 7vw;
+    height: 17vh;
+    margin-top: -19px;
+    margin-left: 40px;
+    rotate: 50deg;
+   
+    border-radius: 20px;
+    animation-name: leftimg;
+    animation-duration: 1s;
+    animation-delay: 1s;
+  
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+   
+    
+  
+  }
+  
+  #left #img6{
+    position: absolute;
+    width: 8.4vw;
+    height: 17vh;
+    margin-top: -250px;
+    margin-left: -330px;
+    border-radius: 900px;
+    animation-name: leftimg;
+    animation-duration: 1s;
+    animation-delay: 1s;
+   
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+  
+  }
+  #left #img7{
+    position: absolute;
+    width: 6.8vw;
+    height: 17vh;
+    margin-top: -90px;
+    margin-left: -350px;
+    border-radius: 30px;
+    rotate: 340deg;
+    animation-name: leftimg;
+    animation-duration: 1s;
+    animation-delay: 1s;
+  
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+  
+  }
+  #left #img8{
+  
+    z-index: 99;
+    width: 10vw;
+    height: 6vh;
+    margin-top: -60px;
+    margin-left: 130px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.519);
+   
+   
+   
+  
+  }
+  .rightalign {
+    flex-direction: row-reverse;
+    padding: 0 110px;
+  }
+  
+  .rightalign #left img{
+    width: 30vw;
+    height: 59vh;
+    margin-top: 50px;
+    margin-left: -90px;
+    border-radius: 300px;
+    border: 5px solid brown;
+   
+   
+    padding: 5px 5px;
+    animation-name: rightalignimg;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+  
+    
+    
+  }
+  @keyframes rightalignimg {
+    from{
+      transform:  translate(100%) rotatez(0);
+      opacity: 0;
+      
+    }
+    to{
+      transform:  translate(0%) rotatez(360deg);
+      opacity: 1;
+    }
+    
+  }
+  #left1 {
+    width: 40%;
+    height: 400px;
+   
+  }
+  
+  #left1 #img10{
+    width: 19vw;
+    height: 50vh;
+    border-radius: 20px;
+    z-index: 999;
+    box-shadow: 20px 20px 35px rgb(0, 0, 0, 0.9);
+    animation-name: left1img;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+  
+   
+  }
+  #img11{
+    position: absolute;
+    z-index: -.9;
+    /* position: absolute;
+    top: 410vh;
+    left: 22vw;
+    transform: translate(-50%,-50%); */
+    
+    width: 35vw;
+    height: 30vh;
+    margin-top: 60px;
+    padding-left: -19px;
+    animation-name: left1img;
+    animation-duration: 1.4s;
+    animation-delay: 1s;
+    
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+  
+  }
+  #img12{
+    margin-top: 35px;
+    margin-left: -70px;
+    /* position: absolute;
+    top: 379vh;
+    left: 20vw;
+    transform: translate(-50%,-50%); */
+    width: 6vw;
+    animation-name: left1img;
+    animation-duration: 1.4s;
+    animation-delay: 1s;
+    
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+  
+  }
+  @keyframes left1img {
+    from{
+      transform:  translate(900%);
+      opacity: 0;
+      
+    }
+    to{
+      transform:  translate(0%);
+      opacity: 1;
+    }
+    
+  }
+   
+   
+  
+  #footer {
+    background-color: rgb(9, 9, 29);
+    padding: 40px 0;
+  }
+  #footer #logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #fff;
+    font-size: 2vw;
+    font-weight: 500;
+    animation-name: foot;
+    animation-duration: 1.9s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+  }
+  @keyframes foot {
+    from{
+    
+      opacity: 0.2;
+      
+    }
+    to{
+     
+      opacity: 1;
+    }
+    
+  }
+  #form1 {
+    font-family: playfair-display;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+  #form1 input {
+    padding: 10px 30px;
+    background-color: rgba(107, 106, 106, 0.427);
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    color: rgba(95, 96, 97, 0.292);
+    font-weight: 600;
+    opacity: 0.7;
+  }
+  #form1 input::placeholder {
+    color: rgba(127, 127, 127, 0.803);
+    font-size: 13px;
+    font-weight: 500;
+  }
+  #form1 button {
+    color: #111;
+    padding: 4px 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 15px;
+    background: linear-gradient(to bottom, #fff, #ffffffaa);
+    opacity: 0.9;
+  }
+  #links {
+    padding: 50px 0;
+    text-align: center;
+  }
+  #links a {
+    text-decoration: none;
+    color: #ffffffc9;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 30px 30px;
+  }
+  #footer h3 {
+    text-align: center;
+    color: #ffffff2c;
+  }
+  
+  
